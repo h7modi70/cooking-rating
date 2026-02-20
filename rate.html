@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>التقييم</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h2>تقييم اليوم</h2>
+
+<select id="person">
+<option>علي ناصر</option>
+<option>حسن ناصر 1</option>
+<option>علي محمد</option>
+<option>حسن ناصر 2</option>
+<option>عباس محمد</option>
+<option>محمد ناصر</option>
+</select>
+
+<select id="day"></select>
+
+<div id="ratings"></div>
+
+<button onclick="save()">حفظ التقييم</button>
+
+<script src="script.js"></script>
+<script type="module" src="firebase.js"></script>
+
+</body>
+</html>
