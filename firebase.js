@@ -13,13 +13,13 @@ const firebaseConfig = {
   measurementId: "G-VSMW8TET7N"
 };
 
-// تهيئة Firebase
+// تهيئة Firebase App
 const app = initializeApp(firebaseConfig);
 
 // تهيئة Firestore
 const db = getFirestore(app);
 
-// نجعلها متاحة في script.js
+// نجعلها متاحة لـ script.js
 window.db = db;
 window.setDoc = setDoc;
 window.doc = doc;
