@@ -28,6 +28,26 @@ a,button{
   font-size:17px;
 }
 
+button{
+  display:block;
+  background:#4b2e83;
+  color:white;
+  font-weight:bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding:14px;
+  margin:15px auto;
+  width:85%;
+  max-width:320px;
+  border-radius:12px;
+  text-decoration:none;
+  border:none;
+  font-size:17px;
+}
+
+button:hover{
+  background:#7e57c2;
+}
+
 a:hover,button:hover{
   background:#7e57c2;
 }
