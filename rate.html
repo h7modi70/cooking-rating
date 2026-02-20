@@ -6,7 +6,13 @@
 <title>التقييم</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
+<script>
+let pwd = prompt("أدخل كلمة المرور لدخول صفحة المقيمين:");
+if(pwd !== "12345678R"){
+    alert("كلمة المرور خاطئة!");
+    window.location.href = "index.html";
+}
+</script>
 <body>
 
 <h2>تقييم اليوم</h2>
