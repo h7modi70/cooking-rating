@@ -25,3 +25,26 @@ padding:10px;
 margin:6px;
 font-size:16px;
 }
+body{
+  font-family:sans-serif;
+  text-align:center;
+  background: linear-gradient(to bottom, #fff8e1, #ffe4b3);
+  color:#4b2e83;
+  padding:20px;
+}
+
+h1,h2{
+  font-family:'Courier New', Courier, monospace;
+  color:#b71c1c;
+}
+
+button,a{
+  background:#4b2e83;
+  color:white;
+  font-weight:bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover,a:hover{
+  background:#7e57c2;
+}
