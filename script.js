@@ -1,6 +1,6 @@
 const cooks = ["أفراح","خديجة","أمور","فضول","زناب","زهراء","زوزو","أمل"];
 
-// إنشاء أيام 30 يوم (إذا موجود في rate.html)
+// إنشاء أيام 30 يوم
 const daySelect = document.getElementById("day");
 if(daySelect){
   for(let i=1;i<=30;i++){
@@ -16,7 +16,7 @@ if(ratingsDiv){
   cooks.forEach(c=>{
     ratingsDiv.innerHTML+=`
       <p>${c}</p>
-      <input type="number" min="1" max="10" id="${c}">
+      <input type="number" min="0" max="10" id="${c}">
     `;
   });
 }
@@ -54,7 +54,7 @@ async function loadResults(){
 
   const res = document.getElementById("results");
   if(res){
-    res.innerHTML = ""; // نظف النتائج قبل العرض
+    res.innerHTML = "";
     cooks.forEach(c=>{
       let avg = (totals[c]/counts[c] || 0).toFixed(2);
       let img = "";
